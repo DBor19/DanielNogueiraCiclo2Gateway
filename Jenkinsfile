@@ -1,12 +1,12 @@
 pipeline {
     agent any
     tools { 
-        nodejs "node 20"
+        nodejs "node 20.18.0"
     }
     stages {
         stage('Clonar Repositório') {
             steps {
-                git 'https://github.com/seu-usuario/api-gateway.git'
+                git 'https://github.com/DBor19/DanielNogueiraCiclo2Gateway.git'
             }
         }
         stage('Instalar Dependências') {
